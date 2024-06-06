@@ -13,10 +13,12 @@ There could be several other factors, but these have been chosen as they show a 
 The datasets have been taken from [https://fred.stlouisfed.org/].
 
 **Approach:**
-1. Download datasets showing the value of factors across the last 20 years.
+1. Gathering datasets showing the value of factors across the last 20 years.
 2. Clean and process the data: Make sure all factors align in dates, use mean to fill initial empty values and then use linear interpolation to fill the remaining empty ones.
 3. Use Power BI to graph the factors and show the correlation between the CASE-SHILLER Index and the other variables.
 4. Use linear regression to show the coefficient by which the factors affect the CASE-SHILLER Index.
+
+**
 
 **References:**
 1. https://fred.stlouisfed.org/series/CSUSHPISA
