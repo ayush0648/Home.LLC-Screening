@@ -1,13 +1,12 @@
 import pandas as pd
 
-# Load the CSV files
 cpi = pd.read_csv('CPIAUCSL.csv', parse_dates=['DATE'], index_col='DATE')
 home_price_index = pd.read_csv('CSUSHPISA.csv', parse_dates=['DATE'], index_col='DATE')
 federal_funds_rate = pd.read_csv('DFF.csv', parse_dates=['DATE'], index_col='DATE')
 housing_inventory = pd.read_csv('ETOTALUSQ176N.csv', parse_dates=['DATE'], index_col='DATE')
 unemployment_rate = pd.read_csv('UNRATE.csv', parse_dates=['DATE'], index_col='DATE')
 
-# Align all datasets to the date range of home price index
+# Aligning all dates to Home Index dates
 start_date = '2004-01-01'
 end_date = '2024-01-01'
 
